@@ -1,11 +1,11 @@
 {
-  "name": "GitHub自动更新影视点播源",
+  "name": "GitHub自動更新影视点播源",
   "version": 2,
   "sources": [
     {
       "name": "新极品资源站",
       "url": "https://jipinvip1.com/api.php/provide/vod",
-      "isAdult": false,
+      "isAdult": true,
       "detail": "https://jipinvip1.com"
     },
     {
