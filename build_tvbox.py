@@ -21,7 +21,7 @@ for index, item in enumerate(sources, 1):
     api = str(item.get("url") or "").strip()
     if not name or not re.match(r"^https?://", api, re.I):
         continue
-    key = f"site_{index + 1:03d}"
+    key = f"site_{index:03d}"
     if key in seen:
         raise SystemExit(f"重複站點 key：{key}")
     seen.add(key)
