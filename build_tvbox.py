@@ -20,10 +20,9 @@ for index, item in enumerate(sources, 1):
     api = str(item.get("url") or "").strip()
     if not name or not re.match(r"^https?://", api, re.I):
         continue
-    slug = re.sub(r"[^\\w\\u4e00-\\u9fff]+", "", name, flags=re.UNICODE)[:12] or "source"
-    key = f"src_{index:02d}_{slug}"
+    key = f"site_{index:03d}"
     if key in seen:
-        key = f"{key}_{index}"
+        raise SystemExit(f"重複站點 key：{key}")
     seen.add(key)
     display_name = ("【成人】" if item.get("isAdult") is True else "") + name
     sites.append({
@@ -40,6 +39,6 @@ if len(sites) < 10:
     raise SystemExit(f"有效來源數量異常：{len(sites)}，停止覆蓋")
 
 tmp = OUTPUT.with_suffix(".json.tmp")
-tmp.write_text(json.dumps({"sites": sites}, ensure_ascii=False, indent=2) + "\\n", encoding="utf-8")
+tmp.write_text(json.dumps({"sites": sites}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 tmp.replace(OUTPUT)
 print(f"已生成 {OUTPUT}，共 {len(sites)} 個站點；成人標記 {sum(1 for x in sites if x['name'].startswith('【成人】'))} 個")
