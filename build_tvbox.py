@@ -12,7 +12,7 @@ OUTPUT = BASE / "tvbox.json"
 
 def category(name, api="", adult=False):
     text = f"{name} {api}".lower()
-    if adult or re.search(r"成人|adult|souav|番号|麻豆|av资源站|黄色|情色", text):
+    if adult:
         return "成人"
     rules = [
         ("短劇", r"duanju|manju|短剧|漫剧"),
@@ -22,9 +22,11 @@ def category(name, api="", adult=False):
         ("聽書", r"book|听书|有声"),
         ("兒童", r"children|儿歌|宝宝|贝贝|兔兔"),
         ("音樂", r"music|音乐|戏曲|ktv|电台|跳舞"),
-        ("網盤／媒體庫", r"alist|webdav|网盘|云盘|115|panshare|盘搜|盘搜索|emby|seedhub"),
+        ("網盤／媒體庫", r"alist|webdav|网盘|云盘|115|panshare|盘搜|盘搜索|emby|seedhub|upyun|yisou|yiso|zhaozy|gitcafe|alips"),
         ("工具", r"push|推送|config|配置中心|急救教学|firstaid"),
         ("電視劇", r"韩剧|hanxiaoquan"),
+        ("4K影庫", r"4k|原盘|pan1me|zhinan|yidong4k"),
+        ("影視推薦", r"douban|豆瓣"),
     ]
     for label, pattern in rules:
         if re.search(pattern, text):
