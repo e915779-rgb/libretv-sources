@@ -32,7 +32,7 @@ def category(name, api="", adult=False):
     return "影視綜合"
 
 def tagged_name(name, label):
-    clean = re.sub(r"^【[^】]+】\\s*", "", str(name or "").strip())
+    clean = re.sub(r"^【[^】]+】\s*", "", str(name or "").strip())
     return f"【{label}】{clean}"
 
 data = json.loads(SOURCE.read_text(encoding="utf-8"))
