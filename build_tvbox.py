@@ -56,6 +56,6 @@ for item in csp_sites:
 all_sites = sites + csp_sites
 output_data = {"spider": csp_data["spider"], "sites": all_sites}
 tmp = OUTPUT.with_suffix(".json.tmp")
-tmp.write_text(json.dumps(output_data, ensure_ascii=False, indent=2) + "\\n", encoding="utf-8")
+tmp.write_text(json.dumps(output_data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 tmp.replace(OUTPUT)
 print(f"已生成 {OUTPUT}：{len(sites)} 個 type:1 + {len(csp_sites)} 個 CSP，共 {len(all_sites)} 個站點")
