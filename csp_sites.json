@@ -3,7 +3,7 @@
   "sites": [
     {
       "key": "Douban",
-      "name": "【影視綜合】🐮【免费分享】🐮",
+      "name": "【影視推薦】🐮【免费分享】🐮",
       "type": 3,
       "api": "csp_NewDouBanGuard",
       "indexs": 1,
@@ -14,7 +14,7 @@
     },
     {
       "key": "花卷",
-      "name": "【影視綜合】💓花卷┃4K💓‍",
+      "name": "【4K影庫】💓花卷┃4K💓‍",
       "type": 3,
       "api": "csp_AiNewHuaJuanGuard",
       "searchable": 1,
@@ -23,7 +23,7 @@
     },
     {
       "key": "玩偶",
-      "name": "【影視綜合】💓‍玩偶┃4K💓‍",
+      "name": "【4K影庫】💓‍玩偶┃4K💓‍",
       "type": 3,
       "api": "csp_AiNewWoggGuard",
       "searchable": 1,
@@ -32,7 +32,7 @@
     },
     {
       "key": "AiNewGuanYing",
-      "name": "【影視綜合】💓‍观影┃4K💓‍",
+      "name": "【4K影庫】💓‍观影┃4K💓‍",
       "type": 3,
       "api": "csp_AiNewGuanYingGuard",
       "searchable": 1,
@@ -41,7 +41,7 @@
     },
     {
       "key": "AiQwMkv",
-      "name": "【影視綜合】💓‍七味┃4K💓‍",
+      "name": "【4K影庫】💓‍七味┃4K💓‍",
       "type": 3,
       "api": "csp_AiQwMkvGuard",
       "searchable": 1,
@@ -50,7 +50,7 @@
     },
     {
       "key": "AiNewPianKu",
-      "name": "【影視綜合】💓盘库┃4K💓",
+      "name": "【4K影庫】💓盘库┃4K💓",
       "type": 3,
       "api": "csp_AiNewPianKuGuard",
       "searchable": 1,
@@ -59,7 +59,7 @@
     },
     {
       "key": "AiNewHuBan",
-      "name": "【影視綜合】💓虎斑┃4K💓",
+      "name": "【4K影庫】💓虎斑┃4K💓",
       "type": 3,
       "api": "csp_AiNewHuBanGuard",
       "searchable": 1,
@@ -68,7 +68,7 @@
     },
     {
       "key": "AiNewMuOu",
-      "name": "【影視綜合】💓木偶┃4K💓",
+      "name": "【4K影庫】💓木偶┃4K💓",
       "type": 3,
       "api": "csp_AiNewMuOuGuard",
       "searchable": 1,
@@ -77,7 +77,7 @@
     },
     {
       "key": "AiNewDuoDuo",
-      "name": "【影視綜合】💓多多┃4K💓",
+      "name": "【4K影庫】💓多多┃4K💓",
       "type": 3,
       "api": "csp_AiNewDuoDuoGuard",
       "searchable": 1,
@@ -86,7 +86,7 @@
     },
     {
       "key": "AiNewKuaiYing",
-      "name": "【影視綜合】💓快影┃4K💓",
+      "name": "【4K影庫】💓快影┃4K💓",
       "type": 3,
       "api": "csp_AiNewKuaiYingGuard",
       "searchable": 1,
@@ -95,7 +95,7 @@
     },
     {
       "key": "AiNewLaBi",
-      "name": "【影視綜合】💓蜡笔┃4K💓",
+      "name": "【4K影庫】💓蜡笔┃4K💓",
       "type": 3,
       "api": "csp_AiNewLaBiGuard",
       "searchable": 1,
@@ -104,7 +104,7 @@
     },
     {
       "key": "AiNewShanDian",
-      "name": "【影視綜合】💓闪电┃4K💓",
+      "name": "【4K影庫】💓闪电┃4K💓",
       "type": 3,
       "api": "csp_AiNewShanDianGuard",
       "searchable": 1,
@@ -113,7 +113,7 @@
     },
     {
       "key": "AiNewJuTou",
-      "name": "【影視綜合】💓剧透┃4K💓",
+      "name": "【4K影庫】💓剧透┃4K💓",
       "type": 3,
       "api": "csp_AiNewJuTouGuard",
       "searchable": 1,
@@ -122,7 +122,7 @@
     },
     {
       "key": "AiNewLibvio",
-      "name": "【影視綜合】💓立播┃4K💓",
+      "name": "【4K影庫】💓立播┃4K💓",
       "type": 3,
       "api": "csp_AiNewLibvioGuard",
       "searchable": 1,
@@ -131,7 +131,7 @@
     },
     {
       "key": "原盘",
-      "name": "【影視綜合】💓‍原盘┃4K💓‍",
+      "name": "【4K影庫】💓‍原盘┃4K💓‍",
       "type": 3,
       "api": "csp_AiNewZhiNan4KGuard",
       "searchable": 1,
@@ -140,7 +140,7 @@
     },
     {
       "key": "蜗牛",
-      "name": "【影視綜合】💓‍蜗牛┃4K💓‍",
+      "name": "【4K影庫】💓‍蜗牛┃4K💓‍",
       "type": 3,
       "api": "csp_AiNewWoNiu4KGuard",
       "searchable": 1,
@@ -149,7 +149,7 @@
     },
     {
       "key": "AiPan1Me",
-      "name": "【影視綜合】💓盘迷┃4K💓",
+      "name": "【4K影庫】💓盘迷┃4K💓",
       "type": 3,
       "api": "csp_AiPan1MeGuard",
       "searchable": 1,
@@ -158,7 +158,7 @@
     },
     {
       "key": "AiNewYiDong4K",
-      "name": "【影視綜合】💓逸动┃4K💓",
+      "name": "【4K影庫】💓逸动┃4K💓",
       "type": 3,
       "api": "csp_AiNewYiDong4KGuard",
       "searchable": 1,
@@ -233,7 +233,7 @@
     },
     {
       "key": "WexFengYe4K",
-      "name": "【影視綜合】💥小枫┃秒播💥",
+      "name": "【4K影庫】💥小枫┃秒播💥",
       "type": 3,
       "api": "csp_WexFengYe4KGuard",
       "searchable": 1,
@@ -305,7 +305,7 @@
     },
     {
       "key": "bilibili",
-      "name": "【影視綜合】 🅱‍哔哩┃合集🅱‍",
+      "name": "【影視綜合】🅱‍哔哩┃合集🅱‍",
       "type": 3,
       "api": "csp_BiliGuard",
       "searchable": 1,
@@ -359,7 +359,7 @@
     },
     {
       "key": "ManJuAiHongGuo",
-      "name": "【短剧】🍉漫短┃小红🍉",
+      "name": "【短劇】🍉漫短┃小红🍉",
       "type": 3,
       "类型": "短剧",
       "api": "csp_ManJuAiHongGuoGuard",
@@ -368,7 +368,7 @@
     },
     {
       "key": "ManJuAiHuoLong",
-      "name": "【短剧】🍉漫剧┃小龙🍉",
+      "name": "【短劇】🍉漫剧┃小龙🍉",
       "type": 3,
       "类型": "短剧",
       "api": "csp_ManJuAiHuoLongGuard",
@@ -377,7 +377,7 @@
     },
     {
       "key": "ManJuAiQiMao",
-      "name": "【短剧】🍉漫剧┃小猫🍉",
+      "name": "【短劇】🍉漫剧┃小猫🍉",
       "type": 3,
       "类型": "短剧",
       "api": "csp_ManJuAiQiMaoGuard",
@@ -386,7 +386,7 @@
     },
     {
       "key": "ManJuAiXiFan",
-      "name": "【短剧】🍉漫短┃小喜🍉",
+      "name": "【短劇】🍉漫短┃小喜🍉",
       "type": 3,
       "类型": "短剧",
       "api": "csp_ManJuAiXiFanGuard",
@@ -395,7 +395,7 @@
     },
     {
       "key": "ManJuAiHeMa",
-      "name": "【短剧】🍉漫短┃小马🍉",
+      "name": "【短劇】🍉漫短┃小马🍉",
       "type": 3,
       "类型": "短剧",
       "api": "csp_ManJuAiHeMaGuard",
@@ -404,7 +404,7 @@
     },
     {
       "key": "DuanJuAiHaoKan",
-      "name": "【短剧】🍉短剧┃好看🍉",
+      "name": "【短劇】🍉短剧┃好看🍉",
       "type": 3,
       "类型": "短剧",
       "api": "csp_DuanJuAiHaoKanGuard",
@@ -413,7 +413,7 @@
     },
     {
       "key": "DuanJuAiQiMiao",
-      "name": "【短剧】🍉短剧┃小猫🍉",
+      "name": "【短劇】🍉短剧┃小猫🍉",
       "type": 3,
       "类型": "短剧",
       "api": "csp_DuanJuAiQiMiaoGuard",
@@ -422,7 +422,7 @@
     },
     {
       "key": "DuanJuAiXingYa",
-      "name": "【短剧】🍉短剧┃星星🍉",
+      "name": "【短劇】🍉短剧┃星星🍉",
       "type": 3,
       "类型": "短剧",
       "api": "csp_DuanJuAiXingYaGuard",
@@ -431,7 +431,7 @@
     },
     {
       "key": "DuanJuAiWeiGuan",
-      "name": "【短剧】🍉短剧┃小薇🍉",
+      "name": "【短劇】🍉短剧┃小薇🍉",
       "type": 3,
       "类型": "短剧",
       "api": "csp_DuanJuAiWeiGuanGuard",
@@ -1035,7 +1035,7 @@
     },
     {
       "key": "tv_pref-007_csp_Duanju",
-      "name": "【短剧】🎭短剧·小盒子",
+      "name": "【短劇】🎭短剧·小盒子",
       "type": 3,
       "api": "csp_Duanju",
       "searchable": 1,
@@ -1080,7 +1080,7 @@
     },
     {
       "key": "tv_pref-007_YiSo",
-      "name": "【影視綜合】🆎易搜·小盒子",
+      "name": "【網盤／媒體庫】🆎易搜·小盒子",
       "type": 3,
       "api": "csp_YiSo",
       "searchable": 1,
@@ -1104,7 +1104,7 @@
     },
     {
       "key": "tv_pref-007_UpYun",
-      "name": "【影視綜合】☁️UP云搜·小盒子",
+      "name": "【網盤／媒體庫】☁️UP云搜·小盒子",
       "type": 3,
       "api": "csp_UpYun",
       "searchable": 1,
@@ -1140,7 +1140,7 @@
     },
     {
       "key": "tv_pref-007_Zhaozy",
-      "name": "【影視綜合】🦊找资源·小盒子",
+      "name": "【網盤／媒體庫】🦊找资源·小盒子",
       "type": 3,
       "api": "csp_Zhaozy",
       "searchable": 1,
@@ -1192,7 +1192,7 @@
     },
     {
       "key": "tv_pref-006_Gitcafe",
-      "name": "【影視綜合】小纸条(新)·俊哥",
+      "name": "【網盤／媒體庫】小纸条(新)·俊哥",
       "type": 3,
       "api": "csp_Gitcafe",
       "searchable": 1,
@@ -1204,7 +1204,7 @@
     },
     {
       "key": "tv_pref-006_upyunsou",
-      "name": "【影視綜合】Up云搜·俊哥",
+      "name": "【網盤／媒體庫】Up云搜·俊哥",
       "type": 3,
       "api": "csp_Upyunso",
       "searchable": 1,
@@ -1216,7 +1216,7 @@
     },
     {
       "key": "tv_pref-006_yisou",
-      "name": "【影視綜合】宜搜·俊哥",
+      "name": "【網盤／媒體庫】宜搜·俊哥",
       "type": 3,
       "api": "csp_Yisou",
       "searchable": 1,
@@ -1227,7 +1227,7 @@
     },
     {
       "key": "tv_pref-006_AliPS",
-      "name": "【影視綜合】AliPS·俊哥",
+      "name": "【網盤／媒體庫】AliPS·俊哥",
       "type": 3,
       "api": "csp_AliPS",
       "searchable": 1,
@@ -1250,7 +1250,7 @@
     },
     {
       "key": "tv_back-017_玩偶",
-      "name": "【影視綜合】玩偶 • 4K·潇洒",
+      "name": "【4K影庫】玩偶 • 4K·潇洒",
       "type": 3,
       "api": "csp_Wogg",
       "searchable": 1,
@@ -1270,7 +1270,7 @@
     },
     {
       "key": "tv_back-017_快映",
-      "name": "【影視綜合】快映 • 4K·潇洒",
+      "name": "【4K影庫】快映 • 4K·潇洒",
       "type": 3,
       "api": "csp_PanWebShare",
       "searchable": 1,
@@ -1288,7 +1288,7 @@
     },
     {
       "key": "tv_back-017_花卷",
-      "name": "【影視綜合】花卷 • 4K·潇洒",
+      "name": "【4K影庫】花卷 • 4K·潇洒",
       "type": 3,
       "api": "csp_PanWebShareHJ",
       "searchable": 1,
@@ -1306,7 +1306,7 @@
     },
     {
       "key": "tv_back-017_搬运",
-      "name": "【影視綜合】搬运 • 4K·潇洒",
+      "name": "【4K影庫】搬运 • 4K·潇洒",
       "type": 3,
       "api": "csp_BanYunDao",
       "searchable": 1,
@@ -1317,7 +1317,7 @@
     },
     {
       "key": "tv_back-017_指南",
-      "name": "【影視綜合】指南 • 4K·潇洒",
+      "name": "【4K影庫】指南 • 4K·潇洒",
       "type": 3,
       "api": "csp_4KZhinan",
       "searchable": 1,
@@ -1333,7 +1333,7 @@
     },
     {
       "key": "tv_back-017_茉莉",
-      "name": "【影視綜合】茉莉 • 4K·潇洒",
+      "name": "【4K影庫】茉莉 • 4K·潇洒",
       "type": 3,
       "api": "csp_HDmoli",
       "searchable": 1,
@@ -1350,7 +1350,7 @@
     },
     {
       "key": "tv_back-017_爱盼",
-      "name": "【影視綜合】爱盼 • 4K·潇洒",
+      "name": "【4K影庫】爱盼 • 4K·潇洒",
       "type": 3,
       "api": "csp_AiPan",
       "searchable": 1,
@@ -1361,7 +1361,7 @@
     },
     {
       "key": "tv_back-017_移动",
-      "name": "【影視綜合】移动 • 4K·潇洒",
+      "name": "【4K影庫】移动 • 4K·潇洒",
       "type": 3,
       "api": "csp_Yidong4K",
       "searchable": 1,
@@ -1372,7 +1372,7 @@
     },
     {
       "key": "tv_back-016_玩偶",
-      "name": "【影視綜合】👽玩偶哥哥┃4K弹幕·饭太硬",
+      "name": "【4K影庫】👽玩偶哥哥┃4K弹幕·饭太硬",
       "type": 3,
       "api": "csp_WoGGGuard",
       "timeout": 30,
@@ -1479,7 +1479,7 @@
     },
     {
       "key": "tv_back-017_即刻",
-      "name": "【影視綜合】即刻 • 4K·潇洒",
+      "name": "【4K影庫】即刻 • 4K·潇洒",
       "type": 3,
       "api": "csp_Jike",
       "searchable": 1,
@@ -1493,7 +1493,7 @@
     },
     {
       "key": "tv_back-017_双星",
-      "name": "【影視綜合】双星 • 4K·潇洒",
+      "name": "【4K影庫】双星 • 4K·潇洒",
       "type": 3,
       "api": "csp_ShuangXing",
       "searchable": 1,
