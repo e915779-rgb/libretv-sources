@@ -20,17 +20,20 @@ jobs:
         with:
           python-version: "3.x"
 
-      - name: Update sources
+      - name: Update LibreTV sources
         run: python build_sources.py
+
+      - name: Generate TVBox / 影视仓 config
+        run: python build_tvbox.py
 
       - name: Commit changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add sources.json
+          git add sources.json tvbox.json
           if git diff --cached --quiet; then
             echo "Sources unchanged"
           else
-            git commit -m "Auto update LibreTV sources"
+            git commit -m "Auto update LibreTV and TVBox sources"
             git push
           fi
