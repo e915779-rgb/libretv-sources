@@ -9,6 +9,32 @@ SOURCE = BASE / "sources.json"
 CSP_SOURCE = BASE / "csp_sites.json"
 OUTPUT = BASE / "tvbox.json"
 
+
+def category(name, api="", adult=False):
+    text = f"{name} {api}".lower()
+    if adult or re.search(r"成人|adult|souav|番号|麻豆|av资源站|黄色|情色", text):
+        return "成人"
+    rules = [
+        ("短劇", r"duanju|manju|短剧|漫剧"),
+        ("動漫", r"anime|动漫|樱花动漫|dm84|异世界"),
+        ("直播", r"live|直播|在线直播"),
+        ("體育", r"sport|体育|看球|kanqiu|wwe"),
+        ("聽書", r"book|听书|有声"),
+        ("兒童", r"children|儿歌|宝宝|贝贝|兔兔"),
+        ("音樂", r"music|音乐|戏曲|ktv|电台|跳舞"),
+        ("網盤／媒體庫", r"alist|webdav|网盘|云盘|115|panshare|盘搜|盘搜索|emby|seedhub"),
+        ("工具", r"push|推送|config|配置中心|急救教学|firstaid"),
+        ("電視劇", r"韩剧|hanxiaoquan"),
+    ]
+    for label, pattern in rules:
+        if re.search(pattern, text):
+            return label
+    return "影視綜合"
+
+def tagged_name(name, label):
+    clean = re.sub(r"^【[^】]+】\\s*", "", str(name or "").strip())
+    return f"【{label}】{clean}"
+
 data = json.loads(SOURCE.read_text(encoding="utf-8"))
 sources = data.get("sources")
 if not isinstance(sources, list) or len(sources) < 10:
@@ -25,7 +51,7 @@ for index, item in enumerate(sources, 1):
     if key in seen:
         raise SystemExit(f"重複站點 key：{key}")
     seen.add(key)
-    display_name = ("【成人】" if item.get("isAdult") is True else "") + name
+    display_name = tagged_name(name, category(name, api, item.get("isAdult") is True))
     sites.append({
         "key": key,
         "name": display_name,
@@ -53,7 +79,7 @@ for item in csp_sites:
         raise SystemExit(f"CSP 站點資料錯誤或 key 重複：{key}")
     seen.add(key)
 
-all_sites = sites + csp_sites
+for item in csp_sites:\n    item["name"] = tagged_name(item.get("name", ""), category(item.get("name", ""), item.get("api", "")))\n\nall_sites = sites + csp_sites
 output_data = {"spider": csp_data["spider"], "sites": all_sites}
 tmp = OUTPUT.with_suffix(".json.tmp")
 tmp.write_text(json.dumps(output_data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
