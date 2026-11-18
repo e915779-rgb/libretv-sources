@@ -9,7 +9,7 @@
 
 GitHub Actions 每 6 小時執行一次：
 1. 從上游同步來源清單。
-2. 重新產生只包含標準 HTTP API（type:1）的 tvbox.json。
+2. 最多保留上游前 57 個有效來源，重新產生只包含標準 HTTP API（type:1）的 tvbox.json。
 3. 對每個 API 發出列表請求（ac=list），檢查 HTTP 回應及 JSON 格式。
 4. 產生健康檢測報告，作為 Actions Artifact 保存 30 天。
 5. 只有來源清單或 tvbox.json 有變更時才提交。
