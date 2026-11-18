@@ -56,7 +56,7 @@ for item in data["data"]:
 
     sources.append(source)
 
-sources = sources[:100]
+sources = sources[:57]
 
 if len(sources) < 10:
     raise RuntimeError(
