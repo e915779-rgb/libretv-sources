@@ -1,4 +1,4 @@
-name: Update LibreTV Sources
+name: Update and Check LibreTV Sources
 
 on:
   schedule:
@@ -9,8 +9,9 @@ permissions:
   contents: write
 
 jobs:
-  update:
+  update-and-check:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -20,13 +21,27 @@ jobs:
         with:
           python-version: "3.x"
 
-      - name: Update LibreTV sources
+      - name: Sync upstream LibreTV sources
         run: python build_sources.py
 
       - name: Generate TVBox / 影视仓 config
         run: python build_tvbox.py
 
-      - name: Commit changes
+      - name: Check all source APIs
+        run: python check_sources.py
+
+      - name: Upload health report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: libretv-api-health-report
+          path: |
+            health-report.json
+            health-report.md
+          if-no-files-found: warn
+          retention-days: 30
+
+      - name: Commit source updates
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -34,6 +49,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "Sources unchanged"
           else
-            git commit -m "Auto update LibreTV and TVBox sources"
+            git commit -m "Auto sync LibreTV and TVBox sources"
             git push
           fi
