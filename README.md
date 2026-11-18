@@ -1,29 +1,25 @@
 # LibreTV 自動更新點播源
 
-## LibreTV 訂閱地址
+## 訂閱地址
 
-https://raw.githubusercontent.com/e915779-rgb/libretv-sources/main/sources.json
+- LibreTV： https://raw.githubusercontent.com/e915779-rgb/libretv-sources/main/sources.json
+- 影视仓 / TVBox： https://raw.githubusercontent.com/e915779-rgb/libretv-sources/main/tvbox.json
 
-## 影视仓 / TVBox 專用配置地址
+## 自動化功能
 
-https://raw.githubusercontent.com/e915779-rgb/libretv-sources/main/tvbox.json
+GitHub Actions 每 6 小時執行一次：
+1. 從上游同步來源清單。
+2. 重新產生只包含標準 HTTP API（type:1）的 tvbox.json。
+3. 對每個 API 發出列表請求（ac=list），檢查 HTTP 回應及 JSON 格式。
+4. 產生健康檢測報告，作為 Actions Artifact 保存 30 天。
+5. 只有來源清單或 tvbox.json 有變更時才提交。
 
-此配置由 `build_tvbox.py` 從 `sources.json` 自動轉換產生。
+也可以在 GitHub 的 Actions 頁面手動執行。
 
-### Jar / Spider 說明
+## 上游
 
-目前生成的站點全部是標準 HTTP API（`type: 1`），不使用 `type: 3` 的 Spider 爬蟲站點，因此配置刻意不指定全域 `spider` JAR，也不會為了消除提示而載入未驗證的第三方 JAR。
-
-若影視倉顯示「Jar 接口加載失敗」，這不代表這些 `type: 1` API 站點本身需要 JAR。請先確認影視倉的精確版本，以及錯誤是否來自 App 的獨立 Jar 接口設定。
-
-### 自動更新
-
-GitHub Actions 每 6 小時更新一次上游來源，並重新產生 `tvbox.json`。
-支援手動執行 workflow。
-
-上游資料：
 https://mylazily.github.io/ziyuanzhan/data/online.json
 
-LibreTV SourceList version 2。
-來源收錄不代表每個 API 都能正常播放。
-成人來源使用 `isAdult` 標記。
+## 檢測規則
+
+檢測只判斷 API 是否能連線並回傳可解析的 JSON，不代表每個影片都能播放，也不代表影片詳情、播放地址及搜索功能均正常。暫時失敗的來源不會自動刪除，避免網路波動造成誤刪。
